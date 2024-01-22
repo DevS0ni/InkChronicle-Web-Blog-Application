@@ -140,7 +140,7 @@ const HTTP_PORT = process.env.PORT || 8080;
 
 
 app.get("/", (req, res) => {
-  res.redirect("/register");
+  res.redirect("/blog");
 });
 
 
