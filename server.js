@@ -43,7 +43,7 @@ app.use(express.static("public"));
 app.use(clientSessions({
   cookieName: "session", 
   secret: "web322blogapplication", 
-  duration: 2 * 60 * 1000, 
+  duration: 20 * 60 * 1000, 
   activeDuration: 1000 * 60 
 }));
 
