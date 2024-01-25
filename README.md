@@ -71,7 +71,7 @@ Access the application at http://localhost:8080.
 - views: Handlebars templates for rendering views.
 - blog-service.js: Module for handling blog-related data and operations.
 - auth-service.js: Module for user authentication and registration.
-- app.js: Main application file with Express.js setup and routes.
+- server.js: Main application file with Express.js setup and routes.
 
  -Note: The project assumes a certain folder structure and dependencies. 
   Ensure that you have the required credentials for Cloudinary and necessary packages installed before running the application.
