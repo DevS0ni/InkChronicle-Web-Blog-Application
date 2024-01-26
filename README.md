@@ -1,5 +1,7 @@
 # InkChronicle - Dev Soni's Web Blog Application
 
+CYCLIC LINK (LIVE HOST) - https://tan-wicked-fish.cyclic.app/blog
+
 * Project Overview:
 
 
