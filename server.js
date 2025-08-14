@@ -26,7 +26,7 @@ const { redirect } = require("express/lib/response.js");
 const app = express();
 
 // Using the 'public' folder as our static folder
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 
 // Setup client-sessions
 app.use(clientSessions({
@@ -113,6 +113,8 @@ app.engine(
 );
 app.set("view engine", ".hbs");
 
+app.set('views', __dirname + '/views');
+
 // Configuring Cloudinary
 cloudinary.config({
   cloud_name: "doihs1hbg",
@@ -126,7 +128,6 @@ const upload = multer();
 
 // Configuring the port
 const HTTP_PORT = process.env.PORT || 8080;
-
 
 app.get("/", (req, res) => {
   res.redirect("/blog");
