@@ -1,3 +1,4 @@
+require('pg'); // explicitly require the "pg" module
 const Sequelize = require("sequelize");
 const { gte } = Sequelize.Op;
 
